@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>repl.it</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="header">
+  <img src="riga.jpg" width="200px">
+  <p>Rīgas Purvciema vidusskola</p>
+</div>
+<div id="menu">
+  <p><a href="index.html">Galvēna</a></p>
+  <p><a href="uzdevums1.html">Uzdevums1</a></p>
+  <p><a href="uzdevums2.html">Uzdevums2</a></p>
+  <p><a href="uzdevums3.html">Uzdevums3</a></p> 
+   <p><a href="uzdevums4.html">Uzdevums4</a></p>
+  <p><a href="uzdevums5.html">Uzdevums5</a></p> 
+  <p><a href="uzdevums6.html">Uzdevums6</a></p>
+   <p><a href="uzdevums7.html">Uzdevums7</a></p>  
+   <p><a href="uzdevums8.html">Uzdevums8</a></p> 
+   <p><a href="uzdevums9-1.html">Uzdevums9-1</a></p> 
+   <p><a href="uzdevums9-2.html">Uzdevums9-2</a></p> 
+</div>
+
+<div id="content">
+<h3>
+  Skriptā ir kods, kas izvada krustojošus taisnstūrus. Mainīt kodu	skriptā,lai taisnstūri nekrustotos.
+ </h3>
+<p>rect(x,y,width,height)  -zīmē taisnstūri</p>
+<ul style="list-style-type:disc;">
+    <li>x- taisnstūra augšējā kreisā stūra x-koordināta</li>
+    <li>y-taisnstūra augšējā kreisā stūra y-koordināta;</li>
+    <li>width-taisnstūra platums pikseļos</li>
+    <li>height-taisnstūra augstums pikseļos</li>
+</ul>
+
+  <canvas id="myCanvas" width="300" height="150" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+// Red rectangle
+ctx.beginPath();
+ctx.lineWidth = "6";
+ctx.strokeStyle = "red";
+ctx.rect(5, 5, 290, 140);  
+ctx.stroke();
+
+// Green  filled rectangle 
+ctx.beginPath();
+ctx.lineWidth = "4";
+ctx.strokeStyle = "green";
+ctx.fillStyle = "#FF0000";
+ctx.fillRect(30, 30, 50, 50);
+ctx.strokeRect(30, 30, 50, 50);
+// Blue rectangle
+ctx.beginPath();
+ctx.lineWidth = "10";
+ctx.strokeStyle = "blue";
+ctx.rect(50, 50, 150, 80);
+ctx.stroke();
+</script> 
+  </div>
+<div class="footer"> Rīga, 2021 </div>
+	</body>
+</html>
+
